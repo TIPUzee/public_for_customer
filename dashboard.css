@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*, 
+*::before, 
+*::after {
+   display: block;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+}
+
+#main-background {
+   position: absolute;
+   top: 64px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+   background: transparent url(https://katana.roninchain.com/bg.svg) no-repeat;
+   background-size: cover;
+}
+
+a {
+   color: inherit;
+}
+
+#ccc {
+   max-width: 1280px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+#ccc .menu {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 64px;
+   padding-inline: 32px;
+}
+
+#ccc .menu li {
+   font-size: 14px;
+   font-weight: 500;
+   
+   height: 32px;
+   padding-inline: 16px;
+   margin-right: 12px;
+   border-radius: 8px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgba(0, 0, 0, 0.808);
+
+   transition: all 0.2s linear;
+}
+
+#ccc .menu .logo {
+   margin-right: 8px;
+}
+
+#ccc .menu .docker {
+   margin-right: 30px;
+}
+
+#ccc .menu li.wallet,
+#ccc .menu li:hover,
+#ccc .menu .active {
+   background-color: #e9f5fe;
+   color: #1273ea;
+   opacity: 1;
+}
+
+#ccc .menu .links-saparator {
+   flex-grow: 1;
+}
+
+#ccc .menu li.wallet a {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   column-gap: 8px;
+}
+
+#ccc .card {
+   max-width: 478px;
+   width: 100%;
+   border-radius: 12px;
+   border: 1px solid #dee6f1;
+   box-shadow: rgb(238, 243, 251) 0px 4px 8px;
+
+   margin-top: 55px;
+   margin-inline: auto;
+   padding-top: 30px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#ccc .card > * {
+   width: 90%;
+}
+
+#ccc .header {
+   font-size: 20px;
+   font-weight: 500;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   margin-bottom: 35px;
+}
+
+#ccc .header svg {
+   color: #000000a6;
+   cursor: pointer;
+   transition: all 0.1s linear;
+}
+
+#ccc .header svg:hover {
+   color: rgb(18, 115, 234);
+}
+
+#ccc .second-field, 
+#ccc .first-field {
+   display: flex;
+   flex-direction: row;
+
+   background-color: #f5f8fc;
+
+   border-radius: 12px;
+   height: 88px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   padding-inline: 16px;
+}
+
+#ccc .second-field .label, 
+#ccc .first-field .label {
+   height: 47px;
+   font-size: 24px;
+   font-weight: 500;
+   padding-inline: 5px;
+   margin-bottom: 10px;
+
+   background-color: #ffff;
+   border-radius: 12px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+   box-shadow: 0 4px 16px 0 #dee6f1;
+}
+
+#ccc .second-field input:focus, 
+#ccc .second-field input, 
+#ccc .first-field input:focus, 
+#ccc .first-field input {
+   background: none;
+   box-shadow: none;
+   outline: none;
+   border: none;
+   
+   color: #000000ad;
+   
+   font-size: 26px;
+   text-align: right;
+   font-weight: 700;
+
+   height: 26px;
+   width: 200px;
+}
+
+#ccc .second-field {
+   margin-bottom: 25px;
+}
+
+#ccc .second-field .label {
+   font-size: 14px;
+   color: white;
+   background-image: linear-gradient(256.28deg,#1c94f4,#1273ea);
+   padding-inline: 20px;
+   column-gap: 10px;
+
+   transition: all 1s linear;
+}
+
+#ccc .second-field .label:hover {
+   background-image: linear-gradient(256.28deg,#1273ea,#1c94f4);
+}
+
+
+
+
+
+
+#ccc .swapper {
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-radius: 8px;
+
+   background-color: #f5f8fc;
+   outline: 2px solid white;
+   position: relative;
+   z-index: 1;
+
+   transform: scale(1.4);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgba(0, 0, 0, 0.685);
+   cursor: pointer;
+}
+
+#ccc .swapper:hover {
+   color: rgb(18, 115, 234);
+}
+
+#ccc button {
+   height: 48px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: 12px;
+   border: none;
+
+   background-color: #e9f5fe;
+   font-size: 16px;
+   color: rgb(18, 115, 234);
+   font-weight: 600;
+
+   margin-bottom: 20px;
+   cursor: pointer;
+}
